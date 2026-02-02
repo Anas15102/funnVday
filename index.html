@@ -174,9 +174,12 @@
         }
 
         .btn-no {
-            border-color: #555;
-            color: #555;
+            background-color: #e74c3c;
+            color: white;
+            border-color: #c0392b;
             transition: 0.1s; /* Faster transition for the escape */
+            z-index: 1000;
+            font-weight: bold;
         }
 
         /* Decoration: Wax Seal */
@@ -403,6 +406,7 @@
             btn.style.position = 'absolute';
             btn.style.left = `${x}px`;
             btn.style.top = `${y}px`;
+            btn.style.zIndex = '1000';
             
             // Funny texts for the button when it moves
             const phrases = ["Try Again!", "Oops!", "Too Slow!", "Really?", "Can't click me!"];
